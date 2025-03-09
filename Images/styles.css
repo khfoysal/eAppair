@@ -1,0 +1,145 @@
+/* Default styles */
+
+.second {
+    text-align: center;
+}
+
+.three {
+    opacity: 0.50;
+}
+
+.four {
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 3px;
+    border-style: none;
+    height: 25px;
+}
+
+.five {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.six {
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0.5;
+    font-weight: 800;
+}
+
+.seven {
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 20px; 
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px; /* Adjust as needed */
+    padding-right: 20px; /* Adjust as needed */
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.item {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.box {
+    width: 150px; /* Set the width of the box */
+    height: 150px; /* Set the height of the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    opacity: 0.5;
+    padding-right: 10%; /* Adjust as needed */
+   
+}
+
+.eight {
+    background-color: rgb(60, 60, 60);
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nine {
+    background-color: rgb(144, 142, 142);
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.final {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+}
+.final2 {
+  padding-top: 10px;
+}
+
+.ten {
+    color: rgb(56, 56, 56);
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.eleven {
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/* Responsive styles */
+/* Responsive styles for small devices */
+@media only screen and (max-width: 600px) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .row {
+      flex-wrap: wrap;
+    }
+  
+    .item {
+      flex: 1 1 100%; /* Take up full width on small screens */
+      margin: 5px; /* Adjust as needed */
+    }
+  
+    .box {
+      width: 100%; /* Take up full width on small screens */
+      height: auto; /* Let height adjust based on content */
+    }
+  }
+  

@@ -1,0 +1,993 @@
+
+
+
+
+
+
+
+
+
+
+ul.font {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between items */
+}
+
+/* Navigation Links */
+ul.font li {
+    position: relative;
+}
+
+ul.font li a {
+    text-decoration: none;
+    color: rgb(202, 204, 209);
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+ul.font li a:hover {
+    color: #937e17; /* Change color on hover */
+}
+
+
+
+
+
+
+/* 1st part of the code index file  */
+/*  Design For Navbar */
+/* General Navbar Styling */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent background */
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+ 
+    
+}
+
+
+
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+/* Navbar Styling */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent background */
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 20px; /* Align to top-left */
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+  
+}
+
+.nav-links li a:hover {
+    color: #d9ad32; /* Change color on hover */
+}
+
+/* Dropdown Styling */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8); /* Dark dropdown */
+    min-width: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Dropdown Menu Items */
+.submenu li {
+    padding: 10px;
+}
+
+.submenu a {
+    display: block;
+    color: rgb(139, 121, 121);
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.submenu a:hover {
+    background: #4a54e08f;
+}
+
+/* Search Icon Styling */
+.search-icon img {
+    width: 24px; /* Icon size */
+    height: 24px;
+    filter: invert(1); /* White color */
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover Effect for Search Icon */
+.search-icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Background Image Section */
+.hero {
+    width: 100%;
+    height: 400px; /* Set appropriate height */
+    background: url('/Images/Background.jpg') no-repeat center center/cover;
+    position: relative;
+}
+/* Background Image */
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the background fills the section */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Overlay Image */
+.overlay-image {
+    max-width: 50%; /* Scale down if needed */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center it perfectly */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .submenu {
+        position: relative;
+        width: 100%;
+    }
+
+    .hero {
+        height: 300px; /* Smaller height for mobile */
+    }
+
+    .logo img {
+        height: 30px; /* Smaller logo */
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+.logo{
+  
+        width: 80px;
+        height: 30px;
+        object-fit: cover; /* Ensures the image fills the dimensions properly */
+      }
+    
+
+/* Background Image Styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Places the image behind other content */
+}
+
+/* Overlay Text Styling */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust color as needed */
+    font-size: 2rem; /* Adjust size as needed */
+    text-align: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Second Part   of the code index file   */
+
+/* Info Section Styling */
+.info-section {
+    background-color: white; /* Off-white background */
+    padding: 40px 60px;
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    max-width: 100%;
+    margin: 40px auto;
+    text-align: justify;
+
+}
+
+/* Heading Styling */
+.info-section h3 {
+    font-size: 26px;
+    font-weight: 700; /* Bold but not too heavy */
+    color: #333; /* Dark grey for a modern look */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.info-section p {
+    font-size: 18px;
+    font-weight: 500; /* Medium weight for professional look */
+    color: #555; /* Slightly dark grey for readability */
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Strong (Bold) Styling */
+.info-section strong {
+    font-weight: 700;
+    color: #222; /* Slightly darker for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-section {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .info-section h3 {
+        font-size: 22px;
+    }
+
+    .info-section p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+
+/* Info Section - Full Width */
+
+
+
+
+/* Part-03 code of the index file  */
+
+/* Three Column Section - Full Width */
+.three-column-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Even spacing between columns */
+    align-items: center;
+    background-color: #fff; /* White background */
+    padding: 40px 0; /* Padding for spacing */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    
+}
+
+/* Individual Column */
+.column {
+    flex: 1; /* Equal width */
+    max-width: 300px; /* Restricts width */
+    text-align: center; /* Centers content */
+    padding: 10px;
+    
+}
+
+/* Styling for Paragraphs */
+.column p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3d3c3c; /* Darker grey for readability */
+    line-height: 1.6;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 1.5;
+    /* Adds a cool italicized effect */
+}
+
+/* Bold Paragraph Text */
+.column p strong {
+    font-weight: 700;
+    font-style: normal; /* Ensures strong text isn't italicized */
+}
+
+/* Icon & Logo Styling */
+.column img {
+    width: 80px; /* Adjust icon size */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the images */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .three-column-section {
+        flex-direction: column; /* Stacks items on smaller screens */
+        text-align: center;
+    }
+
+    .column {
+        max-width: 90%;
+        margin-bottom: 20px; /* Adds spacing between stacked items */
+    }
+
+    .column img {
+        width: 60px; /* Smaller images on mobile */
+    }
+}
+
+
+
+/* 4th Part  */
+.solutions-section {
+    width: 100%;
+    background-color: #f2f2f2; /* Light background */
+    padding: 40px 0;
+    font-style: italic;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight:bold;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center; /* Centers text */
+    display: block;
+    width: 100%; /* Ensures it spans full width */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .solutions-section {
+        padding: 30px 0; /* Adjust spacing for smaller screens */
+    }
+
+    .section-title {
+        font-size: 36px; /* Adjust size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .solutions-section {
+        padding: 20px 0; /* Less padding for small screens */
+    }
+
+    .section-title {
+        font-size: 28px; /* Smaller font for mobile */
+    }
+}
+
+
+/* 5th Part  */
+
+
+
+.solutions-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the images */
+    align-items: center;
+    gap: 30px; /* Adds space between images */
+    padding: 40px 0; /* Adds vertical padding */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Individual Solution Item */
+.solution-item {
+    flex: 1;
+    max-width: 300px; /* Restrict size */
+    text-align:center;/* Centers images */
+}
+
+/* Image Styling */
+.solution-image {
+    width: 100%;
+    height: auto;
+    max-width: 250px; /* Restrict max size */
+    display: block;
+    margin: 0 auto; /* Centers image */
+}
+
+/* Special Styling for the Third Image */
+.special-image .mobile-image {
+    max-width: 300px; /* Slightly larger */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .solutions-container {
+        flex-wrap: wrap; /* Wrap images in smaller screens */
+        gap: 20px;
+    }
+
+    .solution-item {
+        max-width: 45%; /* Two images per row on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .solutions-container {
+        flex-direction: column; /* Stack images in a column */
+        gap: 15px;
+    }
+
+    .solution-item {
+        max-width: 80%; /* Make images smaller on mobile */
+    }
+
+    .special-image .mobile-image {
+        max-width: 250px; /* Adjust size for small screens */
+    }
+}
+
+/* 6th part */
+/* 6th Part - last part of the index file  Full Width Logo Section */
+.logo-section {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #65bff3; /* Light blue background */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures text content is centered */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-section {
+        padding: 15px 0; /* Reduce padding for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-section {
+        flex-direction: column; /* Stack items in a column */
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+}
+
+
+
+
+
+
+/*  */
+
+
+
+.mobile-image {
+    width: 280px; /* Adjust size */
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)); /* Adds depth */
+}
+.loc-image {
+    width: 280px; /* Adjust size */
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3)); /* Adds depth */
+}
+/* 6th part  */
+.logo-section {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #65bff3; /* Black background as per the image */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures text content is centered */
+}
+
+
+/* For Mobile operator .html */
+/* New Class for Navbar Background Image */
+.navbar-bg {
+    background: url('./Images/Mobilepage.jpg') no-repeat center center/cover; /* Background image */
+   
+    width: 100%;  /* Ensures full width */
+    height: 100px; /* Adjust height automatically */
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width:80px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.nav-l li a{
+    color: #ffffff; /* White text for better contrast */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-size: 18px; /* Slightly larger text */
+    font-weight: 600; /* Semi-bold for readability */  
+}
+
+
+
+/* Image Styling */
+.logo-image {
+    max-width: 80%; /* Ensures responsiveness */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Ensures centering */
+}
+  /*   Mobile part css code */
+  /* Service Section */
+
+
+
+/* Bullet Points Styling */
+.award-section {
+    width: 100%;
+    position: relative;
+}
+
+/* Background Image Styling */
+.background-image {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    background-image: url('./Images/Background\ image-1.png'); /* Replace with actual background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Centered Image Over the Background */
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px; /* Adjust as needed */
+    height: auto;
+}
+
+
+
+/* Background Container */
+.background-container {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background Image Styling */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full coverage */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Foreground Image (Appears Over Background) */
+.foreground-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px; /* Adjust as needed */
+    height: auto;
+    z-index: 2; /* Ensures it appears above background */
+}
+
+/* Right-Side Text */
+.award-text {
+    position: absolute;
+    right: 270px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.893);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    max-width: 300px;
+    z-index: 3; /* Ensures text appears above all images */
+}
+
+/* Content Section */
+.service-section ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.service-section li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+/* Mobile Section   End Here */
+
+/* content Enterprise  file here 1st portion is Look like Home er Solution section er all class 
+
+ */
+
+
+/*  2nd portion of enterprise section */
+
+.container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.text-1 {
+    max-width: 55%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.image-1 {
+    max-width: 35%;
+}
+
+.image-1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/*  done Of Social Responsibility  */
+
+
+/* Customer Stories */
+}
+
+.photo-section {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.row-1 .image-box {
+    flex: 1;
+    max-width: 33%;
+}
+
+.row-2, .row-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Makes sure both rows take the full width */
+    max-width: 100vw; /* Ensures it covers the entire viewport width */
+}
+
+.image-box {
+    padding: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+/* done customer Stories */
+
+
+/* For location*/
+.single-image-section {
+    width: 90%; /* Covers most of the screen */
+    margin: 50px auto;
+    text-align: center;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-box img {
+    width: 100%; /* Makes image fit the full section */
+    max-width: 800px; /* Adjust this for a very large image */
+    height: auto; /* Keeps the original aspect ratio */
+    object-fit: contain;
+    border-radius: 10px; /* Optional: adds soft corners */
+}
+
+/* Contact page */
+.image-section1 {
+    width: 95%; /* Increased width for better coverage */
+    margin: 50px auto;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.row-1 .image-box {
+    flex: 1;
+    max-width: 33%; /* Adjusted to fit the full row */
+}
+
+.row-2 {
+    justify-content: center;
+    max-width: 200%; /* Makes the second row image even larger */
+}
+
+.image-box {
+    padding: 20px; /* More spacing for better visibility */
+    display: flex;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%; /* Makes images take up full width */
+    max-width: 500px; /* Increased size for very large display */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain;
+}
+
+/* contact box done */
+
+
+
+
+
+
+
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.content img {
+    max-height: 150px;
+    margin-right: 20px;
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text b {
+    font-weight: bold;
+    opacity: 1.6;
+}
+
+.text a {
+    color: blue;
+    text-decoration: none;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+  /* Done of Enterprise Section */
+
+
+
+
+
+
+
+/* Navbar Background with Image */
+.navbar-bh {
+    background-image: url('./Images/Content.jpg');
+    background-size: cover; /* Ensures image covers the full navbar */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    height: 100px; /* Default height */
+    width: 100%;
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media (max-width: 900px) {
+    .navbar-bh {
+        height: 80px; /* Reduce navbar height for tablets */
+        background-size: contain; /* Adjust image scaling */
+    }
+}
+
+/* For Mobile Screens */
+@media (max-width: 600px) {
+    .navbar-bh {
+        height: 70px; /* Smaller navbar for mobile */
+        background-size: cover; /* Ensure it still covers properly */
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 400px) {
+    .navbar-bh {
+        height: 60px; /* Even smaller navbar for tiny screens */
+    }
+}
+
+
+  /* content All Writting part-02*/
+  .service-section {
+    width: 100%;
+    margin: 20px auto;
+    padding: 50px;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #6c76e6;
+    line-height: 2.20;
+}
+/* For Tablets */
+@media (max-width: 900px) {
+    .service-section {
+        padding: 40px; /* Adjust padding */
+    }
+    /* For Mobile Screens */
+@media (max-width: 600px) {
+    .service-section {
+        padding: 30px; /* Less padding */
+    }
+    @media (max-width: 400px) {
+        .service-section {
+            padding: 20px; /* Adjust padding */
+        }
+
+
+       
+        
+/* Enter prise navbar */
+.navbar-bm{
+    background-image: url('./Images/Enterprise.jpg');
+}
+
+    
+
+
+
+
+
+
+
+/* Strong text styling */
+.service-section strong {
+    font-weight: bold;
+}
+
+
+/* Enterprise Services Section navbar  */
+/* Section Styling */
+
+/* 1st part */
+/* Section Styling */
+
+    
+  
+/* About USpart--> Social Responsibility Section */
+.social-responsibility {
+    background-color: #f2f2f2; /* Light Gray Background */
+    text-align: center;
+    padding: 50px 0; /* Top and bottom padding */
+}
+
+/* Heading Styling */
+.social-responsibility h1 {
+    font-size: 32px; /* Adjust font size */
+    font-weight: bold; /* Make it bold */
+    color: #1a1a1a; /* Dark color for contrast */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-transform: uppercase; /* Make text uppercase */
+}
